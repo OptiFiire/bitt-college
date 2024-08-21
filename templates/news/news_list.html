@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static tailwind_tags %}
+
+{% tailwind_css %}
+
+{% block content %}
+  <section class="bg-gray-900 text-center min-h-screen py-36">
+    <div class="container mx-auto flex items-center flex-col gap-8">
+      <h1 class="text-5xl text-white">Yangiliklar</h1>
+      {% if newsList %}
+        <div class="flex flex-col justify-center items-center w-1/2 gap-6">
+          {% for post in newsList %}
+            <a href="{{ post.link }}" class="hover:shadow-2xl max-w-1/2 text-start gap-4 hover:scale-105 duration-150 p-4 rounded-lg bg-white">
+              <div class="h-fit w-full flex justify-center items-center overflow-hidden">
+                <img class="rounded-lg object-cover" src="../../media/{{ post.image }}" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h1 class="text-sm pt-2">{{ post.created_at }}</h1>
+                <h1 class="text-2xl font-semibold break-words">{{ post.title }}</h1>
+                <p class="text-wrap break-all">{{ post.content }}</p>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      {% else %}
+        <h2 class="text-xl text-gray-500">Yangiliklar xozircha mavjud emas.</h2>
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

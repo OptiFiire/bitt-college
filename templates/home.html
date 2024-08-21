@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+{% load static tailwind_tags %}
+
+{% tailwind_css %}
+
+{% block content %}
+  <section style="
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 5.85)), url('static/bitt.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: top;
+  " class="py-36">
+    <div class="container justify-center mx-auto flex flex-col gap-12">
+      <div class="justify-center px-12 flex gap-4 flex-col">
+        <h1 class="text-red-600 text-8xl font-light">Bitt</h1>
+        <p class="text-white text-6xl font-extralight text-wrap">
+          Maqsadimiz <br /> Inson umrini <span class="text-red-500">uzaytirish</span>!
+        </p>
+        <button class="p-3 mt-6 border-t-[2px] border-red-500 bg-red-600 w-max text-white rounded-lg font-medium text-xl duration-150 hover:bg-red-700 hover:border-red-500 hover:drop-shadow-2xl hover:scale-105">Ro'yxatdan o'tish <i class="fa-solid fa-arrow-right duration-300"></i></button>
+      </div>
+      <div class="flex px-12 gap-4 flex-wrap text-white">
+        <div class="backdrop-blur-lg flex gap-1 flex-col justify-center items-center w-32 h-28 bg-white/10 rounded-lg border-t-[1px] border-white/20 duration-150 hover:drop-shadow-2xl hover:scale-105">
+          <h1 class="font-bold"><i class="fa-solid fa-user-doctor"></i> 85+</h1>
+          <h1>O'qituvchilar</h1>
+        </div>
+        <div class="backdrop-blur-lg flex gap-1 flex-col justify-center items-center w-32 h-28 bg-white/10 rounded-lg border-t-[1px] border-white/20 duration-150 hover:drop-shadow-2xl hover:scale-105">
+          <h1 class="font-bold"><i class="fa-solid fa-building"></i> 85+</h1>
+          <h1>O'qituvchilar</h1>
+        </div>
+        <div class="backdrop-blur-lg flex gap-1 flex-col justify-center items-center w-32 h-28 bg-white/10 rounded-lg border-t-[1px] border-white/20 duration-150 hover:drop-shadow-2xl hover:scale-105">
+          <h1 class="font-bold"><i class="fa-solid fa-flask"></i> 85+</h1>
+          <h1>O'qituvchilar</h1>
+        </div>
+        <div class="backdrop-blur-lg flex gap-1 flex-col justify-center items-center w-32 h-28 bg-white/10 rounded-lg border-t-[1px] border-white/20 duration-150 hover:drop-shadow-2xl hover:scale-105">
+          <h1 class="font-bold"><i class="fa-solid fa-medal"></i> 85+</h1>
+          <h1>O'qituvchilar</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-900 py-36">
+    <div class="container mx-auto flex-col justify-center flex gap-20 px-12 items-center">
+      <h1 class="text-5xl font-light text-center text-wrap text-white">Nega Bittni Tanlashadi?</h1>
+      <div class="flex flex-wrap justify-center gap-12">
+        <div class="bg-gradient-to-r from-rose-500 to-rose-700 border-red-900 p-8 text-white text-wrap rounded-lg gap-4 border-2 items-center flex flex-col max-w-[354px] text-center duration-150 hover:drop-shadow-2xl hover:scale-105">
+          <i class="fa-regular fa-newspaper rounded-full border-2 border-rose-900 bg-rose-700 text-white w-max p-4 text-4xl"></i>
+          <h1 class="text-2xl font-semibold">Quas aspernatur</h1>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aspernatur, officiis ea odio amet consequatur, quaerat excepturi libero non beatae, molestiae architecto dicta nostrum. Facere in ex sed corporis! Tenetur?</p>
+        </div>
+        <div class="bg-gradient-to-r from-rose-500 to-rose-700 border-red-900 p-8 text-white text-wrap rounded-lg gap-4 border-2 items-center flex flex-col max-w-[354px] text-center duration-150 hover:drop-shadow-2xl hover:scale-105">
+          <i class="fa-regular fa-newspaper rounded-full border-[2px] border-red-900 bg-rose-700 text-white w-max p-4 text-4xl"></i>
+          <h1 class="text-2xl font-semibold">Quas aspernatur</h1>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aspernatur, officiis ea odio amet consequatur, quaerat excepturi libero non beatae, molestiae architecto dicta nostrum. Facere in ex sed corporis! Tenetur?</p>
+        </div>
+        <div class="bg-gradient-to-r from-rose-500 to-rose-700 border-red-900 p-8 text-white text-wrap rounded-lg gap-4 border-2 items-center flex flex-col max-w-[354px] text-center duration-150 hover:drop-shadow-2xl hover:scale-105">
+          <i class="fa-regular fa-newspaper rounded-full border-[2px] border-red-900 bg-rose-700 text-white w-max p-4 text-4xl"></i>
+          <h1 class="text-2xl font-semibold">Quas aspernatur</h1>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aspernatur, officiis ea odio amet consequatur, quaerat excepturi libero non beatae, molestiae architecto dicta nostrum. Facere in ex sed corporis! Tenetur?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white py-36">
+    <div class="mx-auto container flex justify-center items-center flex-col gap-24 px-12">
+      <div class="h-min">
+        <h1 class="text-5xl gap-4 font-semibold">Afzalliklar</h1>
+      </div>
+      <div class="flex flex-col justify-center items-center gap-24 px-12 lg:flex-row">
+        <div class="w-full h-full">
+          <img src="/static/anatomiya.jpg" class="object-cover rounded-lg" />
+        </div>
+        <div class="text-black flex flex-col gap-8 justify-center max-w-[450px]">
+          <div class="flex gap-4 flex-row">
+            <div>
+              <i class="fa-solid fa-stethoscope rounded-full border-2 border-red-700 bg-red-600 p-4 text-4xl text-white"></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="text-xl">Lorem ipsum</h1>
+              <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aspernatur, officiis.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 flex-row">
+            <div>
+              <i class="fa-solid fa-vial rounded-full border-2 border-red-700 bg-red-600 p-4 text-4xl text-white"></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="text-xl">Lorem ipsum</h1>
+              <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aspernatur, officiis.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 flex-row">
+            <div>
+              <i class="fa-solid fa-hospital rounded-full border-2 border-red-700 bg-red-600 p-4 text-4xl text-white"></i>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="text-xl">Lorem ipsum</h1>
+              <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas aspernatur, officiis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-900 py-36">
+    <div class="mx-auto container flex justify-center items-center flex-col gap-8 px-12">
+      <h1 class="text-5xl font-light text-center text-wrap text-white">Oxirgi Yangiliklar</h1>
+
+      <div id="indicators-carousel" class="relative w-[850px] h-[800px] text-white flex justify-center gap-4 flex-row items-center rounded-lg" data-carousel="static">
+        {% if news %}
+          <button type="button" class="flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+        {% endif %}
+
+        <div class="flex flex-col h-full gap-6 justify-center items-center">
+          <div class="relative h-[600px] w-56 bg-gray-300 p-4 overflow-hidden rounded-lg border-gray-500 border-2 shadow-lg min-[430px]:w-[300px] min-[496px]:w-[440px] sm:w-[500px] md:w-[600px]">
+            {% if news %}
+              {% for post in news %}
+                <div class="bg-white shadow-2xl flex flex-col justify-between duration-700 ease-in-out hover:size-105" data-carousel-item="active">
+                  <div class="w-full h-full">
+                    <div>
+                      <img src="media/{{ post.image }}" class="p-4 object-cover h-64 w-full rounded-3xl sm:h-80" />
+                    </div>
+                    <div class="flex flex-col text-wrap gap-2 px-4">
+                      <h1 class="text-sm text-gray-800 font-light">{{ post.created_at }}</h1>
+                      <h1 class="text-2xl text-black font-semibold">{{ post.title }}</h1>
+                      <h2 class="text-gray-600">{{ post.content }}</h2>
+                    </div>
+                  </div>
+                  <div class="h-56 w-full absolute top-[390px] z-10">
+                    <div style="background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0))" class="h-40"></div>
+                    <div class="bg-white h-14"></div>
+                  </div>
+                  <div class="flex w-full absolute items-center justify-center top-[515px]">
+                    <a href="news/{{ post.link }}" class="px-6 py-4 z-20 border-t-[2px] border-red-500 bg-red-600 w-max text-white rounded-full text-xl duration-150 hover:bg-red-700 hover:border-red-500 hover:drop-shadow-2xl hover:scale-105">Batafsil</a>
+                  </div>
+                </div>
+              {% endfor %}
+            {% else %}
+              <div class="h-full w-full flex items-center justify-center">
+                <h1 class="text-4xl text-black">Yangiliklar yo'q</h1>
+              </div>
+            {% endif %}
+          </div>
+          <div class="flex space-x-3 rtl:space-x-reverse">
+            {% for post in news %}
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide" data-carousel-slide-to="{{ forloop.counter0 }}"></button>
+            {% endfor %}
+          </div>
+        </div>
+        {% if news %}
+          <button type="button" class="z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

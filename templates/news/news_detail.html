@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static tailwind_tags %}
+
+{% tailwind_css %}
+
+{% block content %}
+  <section class="bg-gray-900 text-white text-center min-h-screen py-36">
+    <div class="container mx-auto flex items-center flex-col gap-8">
+      <div class="mx-24 max-w-1/2">
+        <div class="h-full w-full flex justify-center items-center overflow-hidden">
+          <img class="rounded-lg h-full w-full object-cover" src="../../media/{{ newsInfo.image }}" />
+        </div>
+        <div class="flex flex-col items-start gap-2">
+          <h1 class="text-sm pt-2">{{ newsInfo.created_at }}</h1>
+          <h1 class="text-2xl font-semibold break-words">{{ newsInfo.title }}</h1>
+          <h3 class="text-start break-all">{{ newsInfo.content }}</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

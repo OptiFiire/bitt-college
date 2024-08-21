@@ -1,0 +1,33 @@
+{% extends 'account_base.html' %}
+
+{% load static tailwind_tags %}
+
+{% tailwind_css %}
+
+{% block content %}
+  <section class="bg-gray-900">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <div class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+          <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">Akkauntigizga kiring</h1>
+          <form class="space-y-4 md:space-y-6" action="post">
+            {% csrf_token %}
+            {% for field in form %}
+              <div>
+                <label class="block mb-2 text-sm font-medium text-white">{{ field.label }}</label>
+                {{ field }}
+              </div>
+            {% endfor %}
+            <div class="flex items-center">
+              <a href="#" class="text-sm font-medium hover:underline text-rose-500">Parol esingizdan chiqdimi?</a>
+            </div>
+            <button type="submit" class="w-full text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-rose-600 hover:bg-rose-700 focus:ring-rose-800">Akkauntga kirish</button>
+            <p class="text-sm font-light text-gray-400">
+              Hali akkauntingiz yoqmi? <a href="/account/signup" class="font-medium hover:underline text-rose-500">Akkaunt yarating</a>!
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
