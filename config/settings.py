@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 import os
 from pathlib import Path
-import environ
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,10 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-env = environ.Env()
-environ.Env.read_env()
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -65,9 +65,7 @@ JAZZMIN_SETTINGS = {
     "language_chooser": True,
 }
 
-JAZZMIN_UI_TWEAKS = {
-    "theme": "simplex"
-}
+JAZZMIN_UI_TWEAKS = {"theme": "simplex"}
 
 TAILWIND_APP_NAME = "theme"
 NPM_BIN_PATH = r"C:/Program Files/nodejs/npm.cmd"
